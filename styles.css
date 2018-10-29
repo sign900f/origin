@@ -1,88 +1,45 @@
-#game {
+body {
+    margin: 0;
+}
+
+#screen {
     position: relative;
+    width: 100vw;
+    height: 56.25vw;
+    overflow: hidden;
 }
 
 
-#menu_background {
+/************************************ start *******************************************/
+
+#start {
     background-image: url("design/start.svg");
+    position: absolute;
     background-size: 100%;
     background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vw;
+    position: absolute;
+    z-index: 7;
+    top: 0;
     display: none;
-    width: 100vw;
-    height: 100vw;
+
+}
+
+#startmaane {
+    background-image: url("design/startmaane.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
     position: relative;
-    z-index: 6;
-    top: 1vw;
-    left: 1vw;
-
-}
-
-#foreground_game {
-    background-image: url("design/foreground_game.svg");
-    background-size: 100%;
-    background-repeat: no-repeat;
-    width: 100vw;
-    height: 100vw;
-    position: absolute;
-    z-index: 6;
-    top: 1vw;
-    left: 1vw;
-
-}
-
-#middleground_game {
-    background-image: url("design/middleground_game.svg");
-    background-size: 100%;
-    background-repeat: no-repeat;
-    width: 100vw;
-    height: 100vw;
-    position: absolute;
-    z-index: 4;
-    top: 1vw;
-    left: 1vw;
-}
-
-#second_middleground_game {
-    background-image: url("design/second_middelground_game.svg");
-    background-size: 100%;
-    background-repeat: no-repeat;
-    width: 100vw;
-    height: 100vw;
-    position: absolute;
-    z-index: 3;
-    top: 1vw;
-    left: 1vw;
-}
-
-#vaesel_standart {
-    background-image: url("design/vaesel_standart.svg");
-    background-size: 100%;
-    background-repeat: no-repeat;
-    width: 8vw;
-    height: 16vw;
-    position: relative;
-    z-index: 4;
-    top: 19.5vw;
-    left: 58vw;
-}
-
-
-
-#maane {
-    background-image: url("design/maane.svg");
-    background-size: 100%;
-    background-repeat: no-repeat;
-    width: 13vw;
     height: 13vw;
-    position: relative;
-    z-index: 5;
-    top: 17vw;
-    left: 30vw;
+    width: 13vw;
+    top: 8.35vw;
+    left: 17vw;
+    z-index: 7;
+    display: none;
 }
 
-/******************************************  UI  **********************************************/
-
-
+/************************************ game *******************************************/
 #background_game {
     background-image: url("design/background_game.svg");
     background-size: 100%;
@@ -90,22 +47,204 @@
     width: 100vw;
     height: 100vw;
     position: absolute;
-    z-index: 0;
-    top: 1vw;
-    left: 1vw;
+
+    top: 0vw;
+
 }
+
+#middleground_game {
+    background-image: url("design/middleground_game.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+
+    top: 0vw;
+
+}
+
+#second_middleground_game {
+    background-image: url("design/second_middelground_game.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+
+    top: 0vw;
+
+}
+
+#foreground_game {
+    background-image: url("design/foreground_game.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 6;
+    top: 0vw;
+
+
+}
+
+
+#vaesel_1 {
+    background-image: url("design/vaesel_1.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 8vw;
+    height: 16vw;
+    position: relative;
+    top: 8vw;
+    left: 60vw;
+
+}
+
+#vaesel_2 {
+    background-image: url("design/vaesel_1.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 8vw;
+    height: 16vw;
+    position: relative;
+    top: -11vw;
+    left: 25vw;
+
+}
+
+#vaesel_3 {
+    background-image: url("design/vaesel_1.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 8vw;
+    height: 16vw;
+    position: relative;
+    top: -17vw;
+    left: 65vw;
+
+}
+
+
+.hop {
+    animation-name: hop;
+    animation-duration: 1.8s;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+}
+
+@keyframes hop {
+    0% {
+        transform: translateY(0vw);
+    }
+
+    50% {
+        transform: translateY(15vw);
+    }
+
+}
+
+
+#maane_1 {
+    background-image: url("design/maane.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 13vw;
+    height: 13vw;
+    position: relative;
+    top: -3vw;
+    left: 80vw;
+}
+
+#maane_2 {
+    background-image: url("design/maane.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 13vw;
+    height: 13vw;
+    position: relative;
+    top: -24vw;
+    left: 45vw;
+}
+
+#maane_3 {
+    background-image: url("design/maane.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 13vw;
+    height: 13vw;
+    position: relative;
+    top: -43vw;
+    left: 20vw;
+}
+
+
+
+/************************************ levelcomplete*********************************/
+
+#background_happy_ending {
+    background-image: url("design/background_happy_ending.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 6;
+    top: 0vw;
+
+
+}
+
+#middleground_happy_ending {
+    background-image: url("design/middleground_happy_ending.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 4;
+    top: 0vw;
+
+}
+
+#second_middelground_happy_ending {
+    background-image: url("design/second_middelground_happy_ending.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 3;
+    top: 0vw;
+
+}
+
+#foreforegroudn_happy_ending {
+    background-image: url("design/foreforegroudn_happy_ending.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 3;
+    top: 0vw;
+
+}
+
+/******************************************  UI  **********************************************/
 
 #points {
     background-image: url(design/maane_points.svg);
     background-size: 100%;
     opacity: 0.5;
     background-repeat: no-repeat;
-    width: 15.55vw;
-    height: 15.55vw;
+    width: 15.2vw;
+    height: 15.2vw;
     position: absolute;
     z-index: 1;
-    top: 18vw;
-    left: 68vw;
+    top: 17vw;
+    left: 67.3vw;
 
 }
 
@@ -187,32 +326,7 @@
     left: 0vw;
 }
 
-#startmaane {
-    background-image: url(design/timeglas.svg);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    display: none;
-    width: 4vw;
-    height: 6vw;
-    position: absolute;
-    z-index: 6;
-    top: 0vw;
-    left: 0vw;
-}
-
 /************************************** Screens **********************************************/
-
-#start {
-    background-image: url(design/.svg);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    width: 100vw;
-    height: 100vw;
-    position: absolute;
-    z-index: 7;
-    top: 1vw;
-    left: 1vw;
-}
 
 #settings {
     background-image: url(design/settings.svg);
