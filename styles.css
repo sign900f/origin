@@ -1,0 +1,234 @@
+#game {
+    position: relative;
+}
+
+
+#menu_background {
+    background-image: url("design/start.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: none;
+    width: 100vw;
+    height: 100vw;
+    position: relative;
+    z-index: 6;
+    top: 1vw;
+    left: 1vw;
+
+}
+
+#foreground_game {
+    background-image: url("design/foreground_game.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vw;
+    position: absolute;
+    z-index: 6;
+    top: 1vw;
+    left: 1vw;
+
+}
+
+#middleground_game {
+    background-image: url("design/middleground_game.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vw;
+    position: absolute;
+    z-index: 4;
+    top: 1vw;
+    left: 1vw;
+}
+
+#second_middleground_game {
+    background-image: url("design/second_middelground_game.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vw;
+    position: absolute;
+    z-index: 3;
+    top: 1vw;
+    left: 1vw;
+}
+
+#vaesel_standart {
+    background-image: url("design/vaesel_standart.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 8vw;
+    height: 16vw;
+    position: relative;
+    z-index: 4;
+    top: 19.5vw;
+    left: 58vw;
+}
+
+
+
+#maane {
+    background-image: url("design/maane.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 13vw;
+    height: 13vw;
+    position: relative;
+    z-index: 5;
+    top: 17vw;
+    left: 30vw;
+}
+
+/******************************************  UI  **********************************************/
+
+
+#background_game {
+    background-image: url("design/background_game.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vw;
+    position: absolute;
+    z-index: 0;
+    top: 1vw;
+    left: 1vw;
+}
+
+#points {
+    background-image: url(design/maane_points.svg);
+    background-size: 100%;
+    opacity: 0.5;
+    background-repeat: no-repeat;
+    width: 15.55vw;
+    height: 15.55vw;
+    position: absolute;
+    z-index: 1;
+    top: 18vw;
+    left: 68vw;
+
+}
+
+#energy {
+    background-image: url(design/liv_uden_farve.svg);
+    background-size: 33%;
+    background-repeat: repeat-x;
+    width: 22vw;
+    height: 5vw;
+    position: absolute;
+    z-index: 6;
+    top: 51.5vw;
+    left: 77vw;
+
+}
+
+
+#time {
+    background-image: url(design/timeglas.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 4vw;
+    height: 6vw;
+    position: absolute;
+    z-index: 6;
+    top: 43vw;
+    left: 89vw;
+}
+
+#afslut {
+    background-image: url(design/timeglas.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: none;
+    width: 4vw;
+    height: 6vw;
+    position: absolute;
+    z-index: 6;
+    top: 0vw;
+    left: 0vw;
+}
+
+#igen {
+    background-image: url(design/timeglas.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: none;
+    width: 4vw;
+    height: 6vw;
+    position: absolute;
+    z-index: 6;
+    top: 0vw;
+    left: 0vw;
+}
+
+#settings_lys {
+    background-image: url(design/timeglas.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: none;
+    width: 4vw;
+    height: 6vw;
+    position: absolute;
+    z-index: 6;
+    top: 0vw;
+    left: 0vw;
+}
+
+#settings_moerk {
+    background-image: url(design/timeglas.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: none;
+    width: 4vw;
+    height: 6vw;
+    position: absolute;
+    z-index: 6;
+    top: 0vw;
+    left: 0vw;
+}
+
+#startmaane {
+    background-image: url(design/timeglas.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: none;
+    width: 4vw;
+    height: 6vw;
+    position: absolute;
+    z-index: 6;
+    top: 0vw;
+    left: 0vw;
+}
+
+/************************************** Screens **********************************************/
+
+#start {
+    background-image: url(design/.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vw;
+    position: absolute;
+    z-index: 7;
+    top: 1vw;
+    left: 1vw;
+}
+
+#settings {
+    background-image: url(design/settings.svg);
+    background-size: 100vw;
+    display: none;
+}
+
+#gameover {
+    background-image: url(design/slut.svg);
+    background-size: 100vw;
+    display: none;
+}
+
+#levelcomplete {
+    background-image: url(design/happyending.svg);
+    background-size: 100vw;
+    display: none;
+
+}
