@@ -11,20 +11,60 @@
 <body>
 
     <div id="screen">
-        <div id="menu_background"></div>
+
+
+        <!------------------------  game screen  ----------------------------------->
+
         <div id="game">
+            <div id="background_game"></div>
+            <div id="game_ui">
+                <div id="points"></div>
+            </div>
 
             <div id="game_elements">
-                <div id="background_game"></div>
-                <div id="vaesel_1" class="hop"></div>
-                <div id="maane_1" class="hop"></div>
-                <div id="second_middleground_game"></div>
-                <div id="vaesel_2" class="hop"></div>
-                <div id="maane_2" class="hop"></div>
-                <div id="middleground_game"></div>
-                <div id="vaesel_3" class="hop"></div>
-                <div id="maane_3" class="hop"></div>
+                <!--<div id="vaesel_1" class="vaesel vaesel_pos1"></div>
+                <div id="vaesel_2" class="vaesel vaesel_pos2"></div>
+                <div id="vaesel_3" class="vaesel vaesel_pos3"></div>
 
+                <div id="maane_1" class="maane maane_pos1"></div>
+                <div id="maane_2" class="maane maane_pos1"></div>
+                <div id="maane_3" class="maane maane_pos1"></div>-->
+
+
+                <div id="maane_1" class="hop">
+                    <div class="maane_sprite"></div>
+                </div>
+                <div id="vaesel_1" class="hop">
+                    <div class="vaesel vaesel_sprite"></div>
+                </div>
+
+                <div id="vaesel_2" class="hop">
+                    <div class="vaesel vaesel_sprite"></div>
+                </div>
+                <div id="maane_2" class="hop">
+                    <div class="maane_sprite"></div>
+                </div>
+                <div id="second_middleground_game"></div>
+                <div id="vaesel_3" class="hop">
+                    <div class="vaesel vaesel_sprite"></div>
+                </div>
+                <div id="maane_3" class="hop">
+                    <div class="maane_sprite"></div>
+                </div>
+                <div id="maane_4" class="hop">
+                    <div class="maane_sprite"></div>
+                </div>
+                <div id="vaesel_4" class="hop">
+                    <div class="vaesel vaesel_sprite"></div>
+                </div>
+
+                <div id="middleground_game"></div>
+                <div id="maane_5" class="hop">
+                    <div class="maane_sprite"></div>
+                </div>
+                <div id="vaesel_5" class="hop">
+                    <div class="vaesel vaesel_sprite"></div>
+                </div>
 
 
                 <div id="foreground_game"></div>
@@ -32,50 +72,64 @@
             </div>
 
             <div id="game_ui">
-                <div id="points"></div>
                 <div id="energy"></div>
                 <div id="time"></div>
                 <div id="afslut"></div>
-                <div id="igen"></div>
-                <div id="settings_lys"></div>
                 <div id="settings_moerk"></div>
-                <div id="startmaane"></div>
             </div>
         </div>
-        <div id="start" class="start">
-            <div id="startmaane" class="startmaane"></div>
+
+
+        <!-----------------------------  start  ----------------------------------->
+
+        <div id="start">
+            <div id="startmaane"></div>
+            <div id="settings_lys"></div>
         </div>
-        <div id="settings" class="settings">
+
+
+        <!------------------------  game screen  ----------------------------------->
+
+
+        <div id="settings" class="hide">
             <div id="settings_background" class="">
                 <div id="lyd_1" class=""></div>
                 <div id="lyd_2" class=""></div>
-                <div id="afslut" class=""></div>
-            </div>
-            <div id="gameover" class="gameover">
-                <div id="igen" class="igen"></div>
-                <div id="slut" class="slut"></div>
-            </div>
-            <div id="levelcomplete" class="levelcomplete">
-                <div id="background_happy_ending"></div>
-                <div id="second_middelground_happy_ending"></div>
-                <div id="naebdyr_fest_1" class=""></div>
-                <div id="middleground_happy_ending"></div>
-                <div id="naebdyr_fest_2" class=""></div>
-                <div id="naebdyr_fest_3" class=""></div>
-                <div id="naebdyr_fest_4" class=""></div>
-                <div id="naebdyr_fest_5" class=""></div>
-                <div id="foreground_happy_ending"></div>
-
-
-
-                <div id="foreforeground_happy_ending"></div>
-
-
-
-                <div id="igen" class="igen"></div>
+                <div id="afslut_settings"></div>
             </div>
         </div>
 
+        <!--------------------------  gameover  ----------------------------------->
+
+
+        <div id="gameover" class="hide">
+            <div id="igen_slut"></div>
+            <div id="slut"></div>
+        </div>
+
+        <!---------------------  level complete  ----------------------------------->
+
+
+        <div id="levelcomplete" class="hide">
+            <div id="background_happy_ending"></div>
+            <div id="second_middelground_happy_ending"></div>
+            <div id="disko_maane" class="drej"></div>
+            <div id="naebdyr_fest_1" class="dans"></div>
+            <div id="middleground_happy_ending"></div>
+            <div id="naebdyr_fest_2" class="dans"></div>
+            <div id="naebdyr_fest_3" class="dans"></div>
+            <div id="naebdyr_fest_4" class="dans"></div>
+            <div id="naebdyr_fest_5" class="dans"></div>
+            <div id="foreground_happy_ending"></div>
+
+            <div id="foreforeground_happy_ending"></div>
+            <div id="igen_win"></div>
+        </div>
+
+
+
+    </div>
+    <script src="script.js"></script>
 </body>
 
 </html>
